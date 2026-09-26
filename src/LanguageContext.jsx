@@ -36,7 +36,7 @@ const translations = {
       whatWeDo: "WHAT WE DO",
       statement1: "WE DON'T JUST BUILD",
       statement2: "WEBSITES.",
-      statement3: "WE BUILD LAUNCHES.",
+      statement3: "WE LAUNCH THEM.",
 
       capabilities: "01 / CAPABILITIES",
       everything1: "Everything you need",
@@ -81,43 +81,43 @@ const translations = {
           number: "01",
           title: "BUILT FOR YOU",
           description:
-            "Every project is shaped around your goals, audience, personality, and business.",
+            "Every project is shaped around your business' needs.",
         },
         {
           number: "02",
           title: "ONE PROCESS",
           description:
-            "Strategy, design, branding, development, and launch all working together.",
+            "Strategy, design, branding, development, and launch all in one place.",
         },
         {
           number: "03",
-          title: "BUILT EVERYWHERE",
+          title: "SEAMLESS INTEGRATION",
           description:
-            "Responsive experiences designed to feel intentional on desktop, tablet, and mobile.",
+            "Responsive experiences designed to function seamlessly on desktop, tablet, and mobile.",
         },
         {
           number: "04",
           title: "AFTER LAUNCH",
           description:
-            "Hosting, maintenance, updates, and support keep your website moving forward.",
+            "Hosting, maintenance, updates, and support to keep your website moving forward.",
         },
       ],
 
       aboutLabel: "02 / ABOUT",
-      about1: "GOOD DESIGN",
+      about1: "GOOD DESIGNS",
       about2: "SHOULD",
       about3: "DO SOMETHING.",
 
       aboutLead:
-        "Launched by Alex is a digital studio focused on turning ideas into polished, functional experiences.",
+        "LAUNCHED by Alex is a digital studio focused on turning ideas into reality.",
 
       aboutText:
-        "From a company's first logo to a complete digital presence, every project combines thoughtful design, technology, and strategy.",
+        "From a your first logo to a complete digital presence, every project combines thoughtful design, technology, and strategy.",
 
       values: [
-        ["01", "DESIGN", "Give the idea direction."],
+        ["01", "DESIGN", "Direct the idea."],
         ["02", "BUILD", "Turn the concept into reality."],
-        ["03", "LAUNCH", "Take it into the world."],
+        ["03", "LAUNCH", "Take off into the world."],
       ],
 
       meetTeam: "Meet the Team ↗",
@@ -154,7 +154,7 @@ const translations = {
           name: "HAIR SALON DEMO",
           type: "WEB DESIGN / DEVELOPMENT",
           image: "/project-salon.jpg",
-          url: "https://cuts-color-style-fwnyr2bpl-alexlohr1s-projects.vercel.app/",
+          url: "https://cuts-color-style.vercel.app/",
         },
         {
           number: "04",
@@ -177,7 +177,7 @@ const translations = {
       title1: "FROM IDEA",
       title2: "TO LAUNCH.",
       description:
-        "Flexible creative services designed for businesses at every stage.",
+        "Flexible options designed for businesses at every stage.",
 
       mostPopular: "MOST POPULAR",
       starting: "STARTING FROM",
@@ -297,15 +297,15 @@ const translations = {
       unsure: "NOT SURE WHAT YOU NEED?",
       unsureDescription:
         "Tell us what you're trying to build. We'll figure out the right approach together.",
-      talk: "Talk About Your Project ↗",
+      talk: "Contact Us ↗",
     },
 
     process: {
       label: "THE PROCESS",
       title1: "FROM ZERO",
-      title2: "TO LIVE.",
+      title2: "TO LAUNCH.",
       description:
-        "A clear process keeps every project moving in the same direction.",
+        "A clear process keeps every project moving in the right direction.",
 
       steps: [
         [
@@ -336,7 +336,7 @@ const translations = {
         [
           "06",
           "LAUNCH",
-          "Final checks are complete. The countdown ends and your new digital presence goes live.",
+          "Final checks are complete. The countdown ends and your new digital presence is ready to launch.",
         ],
       ],
 
@@ -353,9 +353,9 @@ const translations = {
         "The people helping turn ideas into brands, websites, and digital experiences.",
 
       alexRole: "FOUNDER / DESIGNER / DEVELOPER",
-      alexLead: "The person behind Launched.",
+      alexLead: "",
       alexText1:
-        "Launched by Alex is an independent digital studio built around a simple idea: good design should be beautiful, functional, and purposeful.",
+        "LAUNCHED by Alex is an independent digital studio built around a simple idea: good design should be beautiful, functional, and purposeful.",
       alexText2:
         "Every project is approached as a collaboration, combining creative direction, design, development, and strategy.",
       workWithUs: "Work With Us ↗",
@@ -467,7 +467,7 @@ const translations = {
       whatWeDo: "LO QUE HACEMOS",
       statement1: "NO SOLO CREAMOS",
       statement2: "SITIOS WEB.",
-      statement3: "CREAMOS LANZAMIENTOS.",
+      statement3: "LOS LANZAMOS.",
 
       capabilities: "01 / CAPACIDADES",
       everything1: "Todo lo que necesitas",
@@ -585,7 +585,7 @@ const translations = {
           name: "DEMO DE SALÓN",
           type: "DISEÑO WEB / DESARROLLO",
           image: "/project-salon.jpg",
-          url: "https://cuts-color-style-fwnyr2bpl-alexlohr1s-projects.vercel.app/",
+          url: "https://cuts-color-style.vercel.app/",
         },
         {
           number: "04",
