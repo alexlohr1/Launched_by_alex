@@ -1802,7 +1802,7 @@ main {
 @keyframes launchPulse {
 
   0%,
-  35% {
+  70% {
     color: var(--orange);
 
     transform: scale(1);
@@ -1812,7 +1812,7 @@ main {
       rgba(255, 77, 0, 0);
   }
 
-  50% {
+  80% {
     color: var(--orange-light);
 
     transform: scale(1.035);
@@ -1824,8 +1824,8 @@ main {
         rgba(255, 77, 0, 0.3);
   }
 
-  70%,
-  80% {
+  90%,
+  100% {
     color: var(--orange);
 
     transform: scale(1);
