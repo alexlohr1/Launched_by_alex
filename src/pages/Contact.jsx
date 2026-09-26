@@ -5,10 +5,38 @@ function Contact() {
   const { t } = useLanguage();
   const contact = t.contact;
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert(contact.alert);
-  };
+    const handleSubmit = async (event) => {
+      event.preventDefault();
+
+      const form = event.currentTarget;
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(
+          "https://formspree.io/f/meaoldrd",
+          {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          }
+        );
+
+        if (response.ok) {
+          alert(contact.alert);
+          form.reset();
+        } else {
+          alert(
+            "Something went wrong. Please try again."
+          );
+        }
+      } catch (error) {
+        alert(
+          "Something went wrong. Please try again."
+        );
+      }
+    };
 
   return (
     <main>
@@ -136,6 +164,7 @@ function Contact() {
 
                 <textarea
                   id="message"
+                  name="message"
                   rows="7"
                   placeholder={
                     contact.messagePlaceholder
