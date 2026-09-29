@@ -188,37 +188,37 @@ const translations = {
           title: "Website Design",
           price: "$750",
           description:
-            "A custom visual direction for businesses that need a polished digital presence.",
+            "A complete, custom-built website for businesses that need a clean, polished digital presence.",
           features: [
             "Custom UI/UX Design",
-            "Responsive Layout",
+            "Responsive Development",
             "Landing Pages",
             "Business Websites",
             "Portfolio Websites",
-            "Design System",
+            "Mobile Optimization",
           ],
         },
         {
           number: "02",
-          title: "Design + Development",
+          title: "Advanced Website Design",
           price: "$1,500",
           featured: true,
           description:
-            "Complete website design and development from the first concept through launch.",
+            "Custom websites with advanced functionality, interactions, and development tailored to your needs.",
           features: [
-            "Strategy",
-            "UI/UX Design",
+            "Everything in Website Design",
             "Custom Development",
             "Interactive Elements",
-            "Mobile Optimization",
+            "Advanced Animations",
+            "Third-Party Integrations",
             "SEO Foundations",
-            "Deployment",
+            
           ],
         },
         {
           number: "03",
           title: "Brand Identity",
-          price: "$500",
+          price: "$750",
           description:
             "A cohesive visual identity designed to make your business recognizable.",
           features: [
@@ -286,10 +286,10 @@ const translations = {
           price: "199",
           features: [
             "Everything in Launch+",
-            "Ongoing Design Support",
-            "Regular Content Changes",
-            "Analytics Review",
-            "Priority Development",
+            "Up to 2 Hours of Site Updates / Month",
+            "Monthly Analytics Review",
+            "Priority Support",
+            "Priority Scheduling",
           ],
         },
       ],
@@ -459,9 +459,9 @@ const translations = {
       hero1: "TU IDEA.",
       hero2: "LANZADA.",
       description:
-        "Creamos sitios web, marcas y experiencias digitales que convierten grandes ideas en algo memorable.",
+        "Sitios web, marcas y experiencias digitales creados para convertir ideas ambiciosas en algo memorable.",
       start: "Iniciar Proyecto ↗",
-      exploreWork: "Ver Nuestro Trabajo",
+      exploreWork: "Explorar Nuestro Trabajo",
       scroll: "DESLIZA PARA EXPLORAR",
 
       whatWeDo: "LO QUE HACEMOS",
@@ -471,7 +471,7 @@ const translations = {
 
       capabilities: "01 / CAPACIDADES",
       everything1: "Todo lo que necesitas",
-      everything2: "para despegar.",
+      everything2: "para lanzar.",
 
       services: [
         {
@@ -500,10 +500,10 @@ const translations = {
         },
       ],
 
-      exploreServices: "Explorar Servicios ↗",
+      exploreServices: "Explorar Todos los Servicios ↗",
 
       why: "¿POR QUÉ LAUNCHED?",
-      notJust1: "NO ES SOLO",
+      notJust1: "NO SOLO",
       notJust2: "OTRO",
       notJust3: "SITIO WEB.",
 
@@ -512,25 +512,25 @@ const translations = {
           number: "01",
           title: "HECHO PARA TI",
           description:
-            "Cada proyecto se diseña alrededor de tus objetivos, audiencia, personalidad y negocio.",
+            "Cada proyecto se adapta a las necesidades de tu negocio.",
         },
         {
           number: "02",
           title: "UN SOLO PROCESO",
           description:
-            "Estrategia, diseño, marca, desarrollo y lanzamiento trabajando juntos.",
+            "Estrategia, diseño, marca, desarrollo y lanzamiento, todo en un solo lugar.",
         },
         {
           number: "03",
-          title: "DISEÑADO PARA TODO",
+          title: "INTEGRACIÓN PERFECTA",
           description:
-            "Experiencias adaptables diseñadas para sentirse perfectas en computadora, tableta y móvil.",
+            "Experiencias adaptables diseñadas para funcionar perfectamente en computadora, tableta y móvil.",
         },
         {
           number: "04",
           title: "DESPUÉS DEL LANZAMIENTO",
           description:
-            "Hosting, mantenimiento, actualizaciones y soporte mantienen tu sitio avanzando.",
+            "Hosting, mantenimiento, actualizaciones y soporte para mantener tu sitio avanzando.",
         },
       ],
 
@@ -540,10 +540,10 @@ const translations = {
       about3: "HACER ALGO.",
 
       aboutLead:
-        "Launched by Alex es un estudio digital enfocado en convertir ideas en experiencias pulidas y funcionales.",
+        "LAUNCHED by Alex es un estudio digital enfocado en convertir ideas en realidad.",
 
       aboutText:
-        "Desde el primer logotipo de una empresa hasta una presencia digital completa, cada proyecto combina diseño, tecnología y estrategia.",
+        "Desde tu primer logotipo hasta una presencia digital completa, cada proyecto combina diseño, tecnología y estrategia.",
 
       values: [
         ["01", "DISEÑAR", "Darle dirección a la idea."],
@@ -563,7 +563,7 @@ const translations = {
       title1: "HECHO PARA",
       title2: "DESTACAR.",
       description:
-        "Sitios web, identidades y experiencias digitales creadas con propósito.",
+        "Sitios web, identidades y experiencias digitales creados con propósito.",
 
       projects: [
         {
@@ -608,7 +608,7 @@ const translations = {
       title1: "DE LA IDEA",
       title2: "AL LANZAMIENTO.",
       description:
-        "Servicios creativos flexibles para negocios en cualquier etapa.",
+        "Opciones flexibles diseñadas para negocios en cualquier etapa.",
 
       mostPopular: "MÁS POPULAR",
       starting: "DESDE",
@@ -619,37 +619,36 @@ const translations = {
           title: "Diseño Web",
           price: "$750",
           description:
-            "Una dirección visual personalizada para negocios que necesitan una presencia digital profesional.",
+            "Un sitio web completo y personalizado para negocios que necesitan una presencia digital limpia y profesional.",
           features: [
             "Diseño UI/UX Personalizado",
-            "Diseño Adaptable",
+            "Desarrollo Adaptable",
             "Landing Pages",
             "Sitios para Negocios",
             "Portafolios",
-            "Sistema de Diseño",
+            "Optimización Móvil",
           ],
         },
         {
           number: "02",
-          title: "Diseño + Desarrollo",
+          title: "Diseño Web Avanzado",
           price: "$1,500",
           featured: true,
           description:
-            "Diseño y desarrollo completo desde el primer concepto hasta el lanzamiento.",
+            "Sitios web personalizados con funcionalidad avanzada, interacciones y desarrollo adaptado a tus necesidades.",
           features: [
-            "Estrategia",
-            "Diseño UI/UX",
+            "Todo en Diseño Web",
             "Desarrollo Personalizado",
             "Elementos Interactivos",
-            "Optimización Móvil",
+            "Animaciones Avanzadas",
+            "Integraciones con Terceros",
             "Fundamentos de SEO",
-            "Publicación",
           ],
         },
         {
           number: "03",
           title: "Identidad de Marca",
-          price: "$500",
+          price: "$750",
           description:
             "Una identidad visual cohesiva diseñada para hacer que tu negocio sea reconocible.",
           features: [
@@ -696,7 +695,7 @@ const translations = {
             "Hosting Administrado",
             "Seguridad SSL",
             "Copias de Seguridad",
-            "Actualizaciones",
+            "Actualizaciones de Software",
             "Soporte Básico",
           ],
         },
@@ -709,7 +708,7 @@ const translations = {
             "Actualizaciones de Contenido",
             "Monitoreo de Rendimiento",
             "Soporte Prioritario",
-            "Revisión Mensual",
+            "Revisión Mensual del Sitio",
           ],
         },
         {
@@ -717,26 +716,26 @@ const translations = {
           price: "199",
           features: [
             "Todo en Launch+",
-            "Soporte de Diseño Continuo",
-            "Cambios Regulares de Contenido",
-            "Revisión de Analíticas",
-            "Desarrollo Prioritario",
+            "Hasta 2 Horas de Actualizaciones al Mes",
+            "Revisión Mensual de Analíticas",
+            "Soporte Prioritario",
+            "Programación Prioritaria",
           ],
         },
       ],
 
       unsure: "¿NO SABES QUÉ NECESITAS?",
       unsureDescription:
-        "Cuéntanos qué quieres crear y encontraremos juntos la mejor solución.",
-      talk: "Hablemos de Tu Proyecto ↗",
+        "Cuéntanos qué quieres crear. Juntos encontraremos el enfoque adecuado.",
+      talk: "Contáctanos ↗",
     },
 
     process: {
       label: "EL PROCESO",
       title1: "DESDE CERO",
-      title2: "HASTA PUBLICAR.",
+      title2: "AL LANZAMIENTO.",
       description:
-        "Un proceso claro mantiene cada proyecto avanzando en la misma dirección.",
+        "Un proceso claro mantiene cada proyecto avanzando en la dirección correcta.",
 
       steps: [
         [
@@ -752,22 +751,22 @@ const translations = {
         [
           "03",
           "DISEÑO",
-          "La idea comienza a tomar forma mediante diseño, tipografía, color, imágenes e interacción.",
+          "La idea comienza a tomar forma mediante diseños, tipografía, color, imágenes e interacción.",
         ],
         [
           "04",
           "DESARROLLO",
-          "Los diseños aprobados se convierten en una experiencia digital funcional y adaptable.",
+          "Los diseños aprobados se convierten en una experiencia digital adaptable y funcional.",
         ],
         [
           "05",
           "PRUEBAS",
-          "Probamos pantallas, interacciones, rendimiento, adaptabilidad y la experiencia final.",
+          "Probamos pantallas, interacciones, rendimiento, adaptabilidad y la experiencia final del usuario.",
         ],
         [
           "06",
           "LANZAMIENTO",
-          "Completamos las revisiones finales y tu nueva presencia digital sale al mundo.",
+          "Las revisiones finales están completas. La cuenta regresiva termina y tu nueva presencia digital está lista para lanzarse.",
         ],
       ],
 
@@ -784,24 +783,24 @@ const translations = {
         "Las personas que ayudan a convertir ideas en marcas, sitios web y experiencias digitales.",
 
       alexRole: "FUNDADOR / DISEÑADOR / DESARROLLADOR",
-      alexLead: "La persona detrás de Launched.",
+      alexLead: "",
       alexText1:
-        "Launched by Alex es un estudio digital independiente basado en una idea simple: el buen diseño debe ser atractivo, funcional y tener un propósito.",
+        "LAUNCHED by Alex es un estudio digital independiente basado en una idea simple: el buen diseño debe ser atractivo, funcional y tener un propósito.",
       alexText2:
         "Cada proyecto se desarrolla como una colaboración que combina dirección creativa, diseño, desarrollo y estrategia.",
       workWithUs: "Trabaja con Nosotros ↗",
 
       team: "EL EQUIPO",
-      people1: "LAS PERSONAS DETRÁS",
+      people1: "PERSONAS DETRÁS",
       people2: "DEL LANZAMIENTO.",
 
       salesRole: "VENTAS / ATENCIÓN AL CLIENTE",
 
       jenny:
-        "Ayuda a los clientes a encontrar los servicios adecuados, entender el proceso y mantenerse conectados desde la primera conversación hasta el lanzamiento.",
+        "Ayudando a los clientes a encontrar los servicios adecuados, entender el proceso y mantenerse conectados desde la primera conversación hasta el lanzamiento.",
 
       debbie:
-        "Apoya a nuestros clientes durante todo el proceso, facilitando la comunicación, coordinación del proyecto y soporte continuo.",
+        "Apoyando a los clientes durante toda su experiencia y haciendo que la comunicación, coordinación del proyecto y soporte continuo sean simples.",
 
       together: "TRABAJEMOS JUNTOS",
       ready: "¿LISTO PARA EMPEZAR?",
@@ -827,7 +826,7 @@ const translations = {
 
       serviceOptions: [
         "Diseño Web",
-        "Diseño Web + Desarrollo",
+        "Diseño Web Avanzado",
         "Identidad de Marca",
         "Creatividad y Multimedia",
         "Hosting y Mantenimiento",
