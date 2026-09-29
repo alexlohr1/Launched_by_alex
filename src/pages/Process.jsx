@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import Reveal from "../components/Reveal";
 import { useLanguage } from "../LanguageContext";
+import SEO from "../components/SEO";
 
 function Process() {
   const { t } = useLanguage();
@@ -8,6 +9,11 @@ function Process() {
 
   return (
     <main>
+      <SEO
+        title="Our Web Design Process | Launched by Alex"
+        description="See how Launched by Alex takes website projects from discovery and design through development, testing, and launch."
+        path="/process"
+      />
       <section className="page-hero process-hero">
         <p className="section-label">
           {process.label}

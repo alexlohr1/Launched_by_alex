@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import Reveal from "../components/Reveal";
 import Marquee from "../components/Marquee";
 import { useLanguage } from "../LanguageContext";
+import SEO from "../components/SEO";
 
 function Home() {
   const { t } = useLanguage();
@@ -10,6 +11,11 @@ function Home() {
 
   return (
     <main>
+      <SEO
+        title="Launched by Alex | Web Design & Development"
+        description="Launched by Alex creates custom websites, brands, and digital experiences designed to turn ambitious ideas into reality."
+        path="/"
+      />
       <section className="hero">
         <div className="hero-grid" />
         <div className="hero-glow" />

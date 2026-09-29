@@ -1,5 +1,6 @@
 import Reveal from "../components/Reveal";
 import { useLanguage } from "../LanguageContext";
+import SEO from "../components/SEO";
 
 function Contact() {
   const { t } = useLanguage();
@@ -40,6 +41,11 @@ function Contact() {
 
   return (
     <main>
+      <SEO
+        title="Start a Web Design Project | Launched by Alex"
+        description="Have a website, branding, or digital project in mind? Contact Launched by Alex to discuss your project and start building."
+        path="/contact"
+      />
       <section className="page-hero contact-page-hero">
         <p className="section-label">
           {contact.label}

@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import Reveal from "../components/Reveal";
 import { useLanguage } from "../LanguageContext";
+import SEO from "../components/SEO";
 
 function Work() {
   const { t } = useLanguage();
@@ -8,6 +9,11 @@ function Work() {
 
   return (
     <main>
+      <SEO
+        title="Web Design Portfolio | Launched by Alex"
+        description="Explore websites, brands, and digital experiences designed and developed by Launched by Alex."
+        path="/work"
+      />
       <section className="page-hero">
         <p className="section-label">
           {work.label}

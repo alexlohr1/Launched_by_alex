@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import Reveal from "../components/Reveal";
 import { useLanguage } from "../LanguageContext";
+import SEO from "../components/SEO";
 
 function Services() {
   const { t } = useLanguage();
@@ -8,6 +9,11 @@ function Services() {
 
   return (
     <main>
+      <SEO
+        title="Web Design Services | Launched by Alex"
+        description="Custom web design, development, branding, creative services, hosting, and ongoing website support from Launched by Alex."
+        path="/services"
+      />
       <section className="page-hero">
         <p className="section-label">
           {page.label}
