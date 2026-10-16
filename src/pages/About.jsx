@@ -1,3 +1,4 @@
+import OrbitArtwork from "../components/OrbitArtwork";
 import { Link } from "react-router";
 import Reveal from "../components/Reveal";
 import { useLanguage } from "../LanguageContext";
@@ -14,7 +15,7 @@ function About() {
         description="Meet the team behind Launched by Alex and learn how we combine design, development, branding, and strategy to bring ideas to life."
         path="/team"
       />
-      <section className="page-hero">
+      <section className="page-hero page-hero--illustrated">
         <p className="section-label">
           {about.label}
         </p>
@@ -30,6 +31,7 @@ function About() {
         <p>
           {about.description}
         </p>
+        <OrbitArtwork variant="team" />
       </section>
 
       <section className="content-section team-section">

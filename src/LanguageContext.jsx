@@ -9,7 +9,7 @@ const translations = {
       work: "Work",
       services: "Services",
       process: "Process",
-      about: "About",
+      about: "Team",
       contact: "Contact",
       start: "Start a Project",
     },
@@ -29,7 +29,7 @@ const translations = {
       hero2: "LAUNCHED.",
       description:
         "Websites, brands, and digital experiences built to turn ambitious ideas into something people remember.",
-      start: "Start a Project ↗",
+      start: "Start a Project ↗︎",
       exploreWork: "Explore Our Work",
       scroll: "SCROLL TO EXPLORE",
 
@@ -69,7 +69,7 @@ const translations = {
         },
       ],
 
-      exploreServices: "Explore All Services ↗",
+      exploreServices: "Explore All Services ↗︎",
 
       why: "WHY LAUNCHED?",
       notJust1: "NOT JUST",
@@ -120,7 +120,7 @@ const translations = {
         ["03", "LAUNCH", "Take off into the world."],
       ],
 
-      meetTeam: "Meet the Team ↗",
+      meetTeam: "Meet the Team ↗︎",
       ourProcess: "Our Process",
       haveIdea: "HAVE AN IDEA?",
       lets: "LET'S",
@@ -169,7 +169,7 @@ const translations = {
       next: "YOUR PROJECT COULD BE NEXT.",
       nextDescription:
         "Have something in mind? Let's build it.",
-      start: "Start a Project ↗",
+      start: "Start a Project ↗︎",
     },
 
     servicesPage: {
@@ -186,7 +186,7 @@ const translations = {
         {
           number: "01",
           title: "Website Design",
-          price: "$750",
+          price: "$500",
           description:
             "A complete, custom-built website for businesses that need a clean, polished digital presence.",
           features: [
@@ -255,7 +255,7 @@ const translations = {
 
       recommended: "RECOMMENDED",
       month: "/ MONTH",
-      getStarted: "GET STARTED ↗",
+      getStarted: "GET STARTED ↗︎",
 
       memberships: [
         {
@@ -275,7 +275,7 @@ const translations = {
           featured: true,
           features: [
             "Everything in Essential",
-            "Content Updates",
+            "Minor Content Updates",
             "Performance Monitoring",
             "Priority Support",
             "Monthly Site Check",
@@ -297,7 +297,7 @@ const translations = {
       unsure: "NOT SURE WHAT YOU NEED?",
       unsureDescription:
         "Tell us what you're trying to build. We'll figure out the right approach together.",
-      talk: "Contact Us ↗",
+      talk: "Contact Us ↗︎",
     },
 
     process: {
@@ -342,11 +342,11 @@ const translations = {
 
       final: "FINAL SEQUENCE",
       launch: "LAUNCH",
-      start: "Start Your Launch ↗",
+      start: "Start Your Launch ↗︎",
     },
 
     about: {
-      label: "ABOUT",
+      label: "TEAM",
       title1: "BEHIND THE",
       title2: "LAUNCH.",
       description:
@@ -358,7 +358,7 @@ const translations = {
         "LAUNCHED by Alex is an independent digital studio built around a simple idea: good design should be beautiful, functional, and purposeful.",
       alexText2:
         "Every project is approached as a collaboration, combining creative direction, design, development, and strategy.",
-      workWithUs: "Work With Us ↗",
+      workWithUs: "Work With Us ↗︎",
 
       team: "THE TEAM",
       people1: "PEOPLE BEHIND",
@@ -376,7 +376,7 @@ const translations = {
       ready: "READY TO START?",
       readyDescription:
         "Tell us what you're working on and let's see what we can create together.",
-      start: "Start a Project ↗",
+      start: "Start a Project ↗︎",
     },
 
     contact: {
@@ -418,7 +418,7 @@ const translations = {
       messagePlaceholder:
         "What are you looking to build?",
 
-      send: "SEND PROJECT INQUIRY ↗",
+      send: "SEND PROJECT INQUIRY ↗︎",
       development:
         "The form is currently in development mode.",
 
@@ -440,7 +440,7 @@ const translations = {
       work: "Proyectos",
       services: "Servicios",
       process: "Proceso",
-      about: "Nosotros",
+      about: "Equipo",
       contact: "Contacto",
       start: "Iniciar Proyecto",
     },
@@ -460,7 +460,7 @@ const translations = {
       hero2: "LANZADA.",
       description:
         "Sitios web, marcas y experiencias digitales creados para convertir ideas ambiciosas en algo memorable.",
-      start: "Iniciar Proyecto ↗",
+      start: "Iniciar Proyecto ↗︎",
       exploreWork: "Explorar Nuestro Trabajo",
       scroll: "DESLIZA PARA EXPLORAR",
 
@@ -500,7 +500,7 @@ const translations = {
         },
       ],
 
-      exploreServices: "Explorar Todos los Servicios ↗",
+      exploreServices: "Explorar Todos los Servicios ↗︎",
 
       why: "¿POR QUÉ LAUNCHED?",
       notJust1: "NO SOLO",
@@ -551,7 +551,7 @@ const translations = {
         ["03", "LANZAR", "Llevarlo al mundo."],
       ],
 
-      meetTeam: "Conoce al Equipo ↗",
+      meetTeam: "Conoce al Equipo ↗︎",
       ourProcess: "Nuestro Proceso",
       haveIdea: "¿TIENES UNA IDEA?",
       lets: "VAMOS A",
@@ -600,7 +600,7 @@ const translations = {
       next: "TU PROYECTO PODRÍA SER EL PRÓXIMO.",
       nextDescription:
         "¿Tienes algo en mente? Hagámoslo realidad.",
-      start: "Iniciar Proyecto ↗",
+      start: "Iniciar Proyecto ↗︎",
     },
 
     servicesPage: {
@@ -617,7 +617,7 @@ const translations = {
         {
           number: "01",
           title: "Diseño Web",
-          price: "$750",
+          price: "$500",
           description:
             "Un sitio web completo y personalizado para negocios que necesitan una presencia digital limpia y profesional.",
           features: [
@@ -685,7 +685,7 @@ const translations = {
 
       recommended: "RECOMENDADO",
       month: "/ MES",
-      getStarted: "COMENZAR ↗",
+      getStarted: "COMENZAR ↗︎",
 
       memberships: [
         {
@@ -705,7 +705,7 @@ const translations = {
           featured: true,
           features: [
             "Todo en Esencial",
-            "Actualizaciones de Contenido",
+            "Actualizaciones Menores de Contenido",
             "Monitoreo de Rendimiento",
             "Soporte Prioritario",
             "Revisión Mensual del Sitio",
@@ -727,7 +727,7 @@ const translations = {
       unsure: "¿NO SABES QUÉ NECESITAS?",
       unsureDescription:
         "Cuéntanos qué quieres crear. Juntos encontraremos el enfoque adecuado.",
-      talk: "Contáctanos ↗",
+      talk: "Contáctanos ↗︎",
     },
 
     process: {
@@ -772,11 +772,11 @@ const translations = {
 
       final: "SECUENCIA FINAL",
       launch: "LANZAMIENTO",
-      start: "Inicia Tu Lanzamiento ↗",
+      start: "Inicia Tu Lanzamiento ↗︎",
     },
 
     about: {
-      label: "NOSOTROS",
+      label: "EQUIPO",
       title1: "DETRÁS DEL",
       title2: "LANZAMIENTO.",
       description:
@@ -788,7 +788,7 @@ const translations = {
         "LAUNCHED by Alex es un estudio digital independiente basado en una idea simple: el buen diseño debe ser atractivo, funcional y tener un propósito.",
       alexText2:
         "Cada proyecto se desarrolla como una colaboración que combina dirección creativa, diseño, desarrollo y estrategia.",
-      workWithUs: "Trabaja con Nosotros ↗",
+      workWithUs: "Trabaja con Nosotros ↗︎",
 
       team: "EL EQUIPO",
       people1: "PERSONAS DETRÁS",
@@ -806,7 +806,7 @@ const translations = {
       ready: "¿LISTO PARA EMPEZAR?",
       readyDescription:
         "Cuéntanos en qué estás trabajando y veamos qué podemos crear juntos.",
-      start: "Iniciar Proyecto ↗",
+      start: "Iniciar Proyecto ↗︎",
     },
 
     contact: {
@@ -848,7 +848,7 @@ const translations = {
       messagePlaceholder:
         "¿Qué estás buscando crear?",
 
-      send: "ENVIAR SOLICITUD ↗",
+      send: "ENVIAR SOLICITUD ↗︎",
       development:
         "El formulario está actualmente en modo de desarrollo.",
 

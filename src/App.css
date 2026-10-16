@@ -3294,3 +3294,243 @@ html[lang="es"] .countdown h2 {
     white-space: nowrap;
   }
 }
+/* Home / What We Do — arcing rocket launch */
+.intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 110px);
+}
+.intro-copy { min-width: 0; }
+.intro-copy .statement { font-size: clamp(40px, 5.5vw, 94px); }
+.intro-launch { min-width: 0; }
+.launch-scene {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 520 / 430;
+  max-width: 520px;
+  margin-inline: auto;
+}
+.launch-arc { width: 100%; height: 100%; overflow: visible; }
+.launch-arc path {
+  stroke: #fb7449;
+  stroke-width: 1.5;
+  stroke-dasharray: 3 7;
+  opacity: .5;
+}
+.launch-origin { fill: #fb7449; opacity: .8; }
+.launch-destination { fill: currentColor; opacity: .4; }
+.launch-rocket {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11%;
+  color: #f4f4f5;
+  offset-path: path("M 75 365 Q 135 105 455 65");
+  offset-rotate: auto 90deg;
+  offset-anchor: center;
+  animation: rocket-arc-flight 7s ease-in-out infinite;
+  filter: drop-shadow(0 0 12px rgba(251,116,73,.35));
+}
+.launch-rocket svg { display: block; width: 100%; }
+.rocket-flame { transform-origin: 32px 69px; animation: rocket-flame-flicker .24s ease-in-out infinite alternate; }
+.launch-star { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #fb7449; opacity: .6; }
+.launch-star-one { top: 21%; left: 26%; }
+.launch-star-two { top: 56%; right: 15%; width: 3px; height: 3px; }
+.launch-star-three { bottom: 19%; right: 33%; width: 2px; height: 2px; }
+@keyframes rocket-arc-flight {
+  0% { offset-distance: 0%; opacity: 0; }
+  8% { opacity: 1; }
+  78% { offset-distance: 100%; opacity: 1; }
+  88%, 100% { offset-distance: 100%; opacity: 0; }
+}
+@keyframes rocket-flame-flicker { from { transform: scaleY(.7); } to { transform: scaleY(1.12); } }
+@media (max-width: 800px) {
+  .intro-layout { grid-template-columns: 1fr; gap: 28px; }
+  .launch-scene { max-width: 380px; }
+  .intro-copy .statement { font-size: clamp(38px, 8vw, 70px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .launch-rocket, .rocket-flame { animation: none; }
+  .launch-rocket { offset-distance: 55%; opacity: 1; }
+}
+
+/* Illustrated page headers and orbit systems */
+.page-hero--illustrated { position: relative; overflow: hidden; isolation: isolate; padding-right: min(45vw, 650px); }
+.page-hero--illustrated > .section-label, .page-hero--illustrated > h1, .page-hero--illustrated > p { position: relative; z-index: 2; }
+.page-hero--illustrated h1 { font-size: clamp(58px, 8vw, 125px); }
+.orbit-art { --orbit-size: min(38vw, 520px); position: absolute; width: var(--orbit-size); height: var(--orbit-size); right: 3%; top: 50%; transform: translateY(-50%); pointer-events: none; opacity: .88; }
+.orbit-art__core { position: absolute; width: 9px; height: 9px; border-radius: 50%; background: var(--orange); top: 50%; left: 50%; box-shadow: 0 0 28px var(--orange); }
+.orbit-art__ring { position: absolute; inset: 5%; border: 1px solid rgba(255, 91, 19, .30); border-radius: 50%; animation: orbit 27s linear infinite; }
+.orbit-art__ring--2 { inset: 20%; animation-duration: 19s; animation-direction: reverse; border-color: rgba(255,91,19,.48); }
+.orbit-art__ring--3 { inset: -9%; animation-duration: 38s; }
+.orbit-art__ring--4 { inset: 34%; animation-duration: 12s; animation-direction: reverse; }
+.orbit-art__planet { position: absolute; top: -6px; left: 50%; width: 12px; height: 12px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 17px rgba(255,91,19,.85); }
+.orbit-art__planet--second { top: auto; left: auto; right: -4px; bottom: 30%; width: 7px; height: 7px; }
+.orbit-art__moon { position: absolute; width: 4px; height: 4px; background: #fff0d9; border-radius: 50%; top: -7px; left: -5px; box-shadow: 0 0 7px #ff8a48; }
+.orbit-art--work { transform: translateY(-50%) rotate(-20deg) scaleX(.87); }
+.orbit-art--process { transform: translateY(-50%) rotate(28deg) scaleX(.94); }
+.orbit-art--team { transform: translateY(-50%) rotate(-35deg) scaleY(.8); }
+.orbit-art--services { transform: translateY(-50%) rotate(15deg); }
+.memberships { position: relative; overflow: hidden; }
+.memberships > .membership-orbit { position: absolute; right: 4%; top: 25px; width: 36%; height: 300px; pointer-events: none; }
+.membership-orbit .orbit-art { --orbit-size: 280px; right: 0; top: 50%; }
+.memberships > .membership-grid { position: relative; z-index: 1; }
+.launch-illustration { position: absolute; right: 10%; top: 50%; transform: translateY(-45%); width: 260px; height: 320px; pointer-events: none; }
+.launch-rocket { position: absolute; left: 99px; bottom: 96px; width: 62px; height: 150px; background: linear-gradient(90deg,#bfbfc6,#fff 45%,#d9d9e1); border: 3px solid var(--orange); border-radius: 50% 50% 20% 20%; animation: rocket-hover 2.8s ease-in-out infinite; z-index: 2; }
+.launch-window { position: absolute; left: 16px; top: 42px; width: 24px; height: 24px; border-radius: 50%; background: #191919; border: 4px solid var(--orange); }
+.launch-fin { position: absolute; bottom: 5px; width: 25px; height: 52px; background: var(--orange); }
+.launch-fin--left { left: -23px; clip-path: polygon(100% 0,100% 100%,0 100%); }
+.launch-fin--right { right: -23px; clip-path: polygon(0 0,100% 100%,0 100%); }
+.launch-flame { position: absolute; top: 100%; left: 19px; width: 18px; height: 29px; border-radius: 0 0 50% 50%; background: linear-gradient(#ff6b16,#ffc47b,transparent); opacity: .75; animation: flame-pulse 1s ease-in-out infinite alternate; }
+.launch-pad { position: absolute; bottom: 36px; left: 28px; width: 205px; height: 18px; border-radius: 5px; background: var(--orange); box-shadow: 0 13px 0 #422015; }
+.launch-smoke { position: absolute; bottom: 58px; left: 44px; width: 175px; height: 85px; }
+.launch-smoke i { position: absolute; bottom: 0; left: calc(var(--i, 1) * 25px); width: 55px; height: 55px; border-radius: 50%; background: rgba(175, 169, 166, .27); filter: blur(5px); animation: smoke-drift 2.8s ease-in-out infinite alternate; }
+.launch-smoke i:nth-child(1) { --i:0; animation-delay: -.8s; } .launch-smoke i:nth-child(2) { --i:1; animation-delay: -1.6s; } .launch-smoke i:nth-child(3) { --i:2; animation-delay: -.3s; } .launch-smoke i:nth-child(4) { --i:3; animation-delay: -2s; } .launch-smoke i:nth-child(5) { --i:4; animation-delay: -1.2s; }
+@keyframes rocket-hover { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+@keyframes smoke-drift { from { transform: translate(-5px, 0) scale(.9); opacity:.45; } to { transform: translate(7px,-13px) scale(1.18); opacity:.85; } }
+@keyframes flame-pulse { to { height: 19px; opacity:.4; } }
+@media (max-width: 800px) { .page-hero--illustrated { padding-right: var(--page); padding-bottom: 280px; } .page-hero--illustrated h1 { font-size: clamp(48px, 12vw, 90px); } .page-hero--illustrated > .orbit-art { --orbit-size: 240px; top: auto; bottom: -55px; right: 7%; transform: none; } .page-hero--illustrated > .launch-illustration { transform: scale(.67); transform-origin: bottom right; top: auto; bottom: -18px; right: 8%; } .membership-orbit { opacity: .4; } }
+@media (prefers-reduced-motion: reduce) { .orbit-art__ring, .launch-rocket, .launch-smoke i, .launch-flame { animation: none !important; } }
+
+/* Corrections: distinct home flight and services launch artwork */
+.intro-launch .launch-rocket { position:absolute; top:0; left:0; bottom:auto; right:auto; width:11%; height:auto; background:none; border:0; border-radius:0; z-index:2; offset-path:path("M 75 365 Q 135 105 455 65"); offset-distance:0%; offset-rotate:auto 90deg; offset-anchor:center; animation:rocket-arc-flight 7s ease-in-out infinite; }
+.intro-launch .launch-rocket svg { height:auto; }
+.page-hero--illustrated { min-height:600px; padding-right:min(48vw,700px); }
+.page-hero--illustrated > .orbit-art { --orbit-size:clamp(440px,47vw,720px); right:-8%; top:52%; transform:translateY(-50%); }
+.orbit-art--work,.orbit-art--process,.orbit-art--team,.orbit-art--services { transform:translateY(-50%) !important; }
+.orbit-art__ring { aspect-ratio:1; }
+.orbit-art--work .orbit-art__ring--2 { inset:24%; }
+.orbit-art--process .orbit-art__ring--2 { inset:18%; }
+.orbit-art--team .orbit-art__ring--2 { inset:28%; }
+.orbit-art--services .orbit-art__ring--2 { inset:27%; }
+.page-hero--illustrated > .launch-illustration { width:360px; height:410px; right:clamp(30px,11vw,220px); top:50%; transform:translateY(-50%) scale(1.22); transform-origin:center; }
+.launch-illustration .launch-rocket { position:absolute; top:auto; left:99px; bottom:96px; width:62px; height:150px; offset-path:none; offset-distance:initial; offset-rotate:initial; offset-anchor:initial; background:linear-gradient(90deg,#bfbfc6,#fff 45%,#d9d9e1); border:3px solid var(--orange); border-radius:50% 50% 20% 20%; animation:rocket-hover 2.8s ease-in-out infinite; }
+.membership-flight { position:absolute; width:min(43vw,520px); right:4%; top:20px; pointer-events:none; opacity:.85; }
+.membership-flight svg { display:block; width:100%; overflow:visible; }
+.membership-flight__track { fill:none; stroke:var(--orange); stroke-width:1.7; stroke-dasharray:5 8; opacity:.6; }
+.membership-flight__craft { offset-path:path("M 260 135 C 165 -25 20 20 35 135 C 50 255 180 285 260 135 C 340 -15 470 15 485 135 C 500 255 355 295 260 135"); offset-rotate:auto 90deg; animation:flight-eight 11s linear infinite; }
+@keyframes flight-eight { from {offset-distance:0%} to {offset-distance:100%} }
+@media(max-width:800px) { .page-hero--illustrated { min-height:680px; padding-right:var(--page); padding-bottom:360px; } .page-hero--illustrated > .orbit-art { --orbit-size:clamp(330px,85vw,490px); top:auto; bottom:-110px; right:-18%; transform:none !important; } .page-hero--illustrated > .launch-illustration { top:auto; bottom:-30px; right:3%; transform:scale(.88); transform-origin:bottom right; } .membership-flight { position:relative; width:min(100%,480px); right:auto; top:auto; margin:20px auto 0; } }
+@media(prefers-reduced-motion:reduce) { .intro-launch .launch-rocket {animation:none;offset-distance:55%;opacity:1} .membership-flight__craft {animation:none;offset-distance:25%} }
+
+/* Final hero and figure-eight alignment refinements */
+@media (min-width: 801px) {
+  .page-hero--illustrated { min-height: 75vh; min-height: 75svh; padding-top: 155px; padding-bottom: 110px; }
+  .page-hero--illustrated > .orbit-art { --orbit-size: clamp(490px, 49vw, 780px); right: -9%; top: 50%; }
+  .memberships > .membership-flight { top: 40px; right: 7%; width: min(44vw, 560px); }
+  .memberships > .membership-grid { margin-top: 85px; }
+}
+.orbit-art--contact { transform: translateY(-50%); }
+.orbit-art--contact .orbit-art__ring--2 { inset: 23%; }
+.orbit-art--contact .orbit-art__ring--3 { inset: -14%; }
+.membership-flight__gravity--orange { fill: #ff5b13; filter: drop-shadow(0 0 14px rgba(255,91,19,.5)); }
+.membership-flight__gravity--white { fill: #f5f2ee; filter: drop-shadow(0 0 14px rgba(255,255,255,.25)); }
+.memberships > .membership-flight { top: 35px; right: 8%; }
+.memberships > div:first-child { position: relative; z-index: 1; max-width: 53%; }
+@media (max-width: 800px) {
+  .page-hero--illustrated { min-height: 75svh; }
+  .page-hero--illustrated > .orbit-art { --orbit-size: clamp(330px, 85vw, 490px); }
+  .memberships > div:first-child { max-width: 100%; }
+  .memberships > .membership-flight { position: relative; top: auto; right: auto; width: min(100%, 520px); margin: 25px auto 35px; }
+}
+
+/* V6: shorter interior heroes, orbiting moons and expanded home solar system */
+@media (min-width: 801px) {
+  .page-hero--illustrated {
+    min-height: 37.5svh;
+    height: auto;
+    padding-top: clamp(64px, 8vh, 100px);
+    padding-bottom: clamp(45px, 6vh, 80px);
+  }
+  .page-hero--illustrated > .orbit-art { --orbit-size: clamp(340px, 38vw, 610px); }
+  .page-hero--illustrated > .launch-illustration { transform: translateY(-50%) scale(.88); }
+}
+.orbit-art__moon { top: 4px; left: 4px; animation: moonOrbit 2.8s linear infinite; }
+.orbit-art__planet--second .orbit-art__moon { animation-duration: 3.9s; animation-direction: reverse; }
+.home-orbit-core { position: absolute; z-index: 1; width: 35px; height: 35px; border-radius: 50%; background: #fff9ef; box-shadow: 0 0 25px 10px #ffb05c, 0 0 85px 28px rgba(255,91,19,.43); right: 120px; top: calc(14% + 350px); transform: translate(50%,-50%); pointer-events: none; }
+.hero .orbit-three { width: 920px; height: 920px; right: -340px; top: calc(14% - 110px); animation: orbit 44s linear infinite; }
+.hero .orbit-four { width: 1160px; height: 1160px; right: -460px; top: calc(14% - 230px); animation: orbit 60s linear infinite reverse; }
+.home-orbit-flight { position: absolute; width: 800px; height: 800px; right: -280px; top: calc(14% - 50px); pointer-events: none; color: #ff5b13; animation: orbit 35s linear infinite; }
+.home-orbit-flight > svg { display: block; width: 100%; height: 100%; }
+.home-orbit-craft { position: absolute; left: 50%; top: 3%; width: 25px; height: 36px; transform: translate(-50%,-50%) rotate(90deg); filter: drop-shadow(0 0 8px #ff5b13); }
+.home-orbit-craft svg { width: 100%; height: 100%; }
+/* Center the figure-eight on the accompanying heading/description rather than the section top. */
+@media (min-width: 801px) {
+  .memberships > .membership-flight { top: 165px; right: 5%; width: min(42vw, 530px); transform: translateY(-20%); }
+  .memberships > .membership-grid { margin-top: 90px; }
+}
+@media (max-width: 800px) {
+  .page-hero--illustrated { min-height: 37.5svh; padding-top: 80px; padding-bottom: 225px; }
+  .page-hero--illustrated > .orbit-art { --orbit-size: clamp(240px, 70vw, 380px); bottom: -95px; }
+  .page-hero--illustrated > .launch-illustration { transform: scale(.63); bottom: -55px; }
+  .memberships > .membership-flight { position: relative; width: min(76vw, 310px); margin: 4px auto 18px; top: auto; right: auto; transform: none; }
+  .hero .orbit-three { width: 650px; height: 650px; right: -350px; top: 10%; }
+  .hero .orbit-four { width: 820px; height: 820px; right: -435px; top: calc(10% - 85px); }
+  .home-orbit-core { right: -25px; top: calc(10% + 325px); width: 20px; height: 20px; }
+  .home-orbit-flight { width: 580px; height: 580px; right: -315px; top: calc(10% + 35px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .orbit-three, .hero .orbit-four, .home-orbit-flight, .orbit-art__moon { animation: none !important; }
+}
+
+/* V7: spacious interior hero, common home orbital center, engine artwork */
+@media (min-width: 801px) {
+  .page-hero--illustrated {
+    min-height: 62.5svh;
+    padding-top: clamp(105px, 13vh, 165px);
+    padding-bottom: clamp(85px, 10vh, 135px);
+  }
+  .memberships > .membership-flight { right: 9%; }
+}
+/* All four concentric rings and the craft share the glowing core's exact center. */
+.hero { --home-orbit-center-x: 120px; --home-orbit-center-y: calc(14% + 350px); }
+.hero .home-orbit-core { right: var(--home-orbit-center-x); top: var(--home-orbit-center-y); }
+.hero .orbit-one, .hero .orbit-two, .hero .orbit-three, .hero .orbit-four,
+.hero .home-orbit-flight {
+  top: var(--home-orbit-center-y);
+  right: var(--home-orbit-center-x);
+  margin-top: 0;
+  margin-right: 0;
+  translate: 50% -50%;
+}
+/* The flight path is concentric as well, while its craft travels independently. */
+.why-feature-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); gap: clamp(28px, 5vw, 90px); align-items: center; }
+.why-engine-panel { position: relative; height: clamp(210px, 26vw, 340px); border-left: 1px solid rgba(255,91,19,.65); overflow: hidden; isolation: isolate; }
+.why-engine { position: absolute; width: min(55%, 300px); height: 72%; left: 4%; top: 14%; z-index: 3; filter: drop-shadow(0 0 15px rgba(255,91,19,.17)); }
+.why-engine-flame { position: absolute; z-index: 1; left: 48%; top: 50%; transform-origin: left center; transform: translateY(-50%); clip-path: polygon(0 22%, 12% 6%, 34% 23%, 58% 0, 76% 30%, 100% 50%, 76% 72%, 58% 100%, 34% 77%, 12% 94%, 0 78%); animation: engine-thrust 1.2s ease-in-out infinite alternate; }
+.why-engine-flame--outer { width: 57%; height: 50%; background: linear-gradient(90deg,#ff5b13,#ff9b31 38%,rgba(255,91,19,.08)); filter: drop-shadow(0 0 20px #ff5b13); }
+.why-engine-flame--inner { width: 45%; height: 25%; z-index: 2; background: linear-gradient(90deg,#fff7d4,#ffce68 48%,rgba(255,170,51,0)); animation-duration: .8s; }
+.why-engine-spark { position: absolute; left: 72%; top: 30%; width: 5px; height: 5px; border-radius: 50%; background: #ff9a40; box-shadow: 0 0 12px #ff5b13; animation: engine-spark 1.8s linear infinite; }
+.why-engine-spark--b { top: 66%; animation-delay: -.8s; }
+@keyframes engine-thrust { from { scale: .86 .9; opacity: .8; } to { scale: 1.07 1.08; opacity: 1; } }
+@keyframes engine-spark { from { translate: -15px 0; opacity: 1; } to { translate: 95px -16px; opacity: 0; } }
+@media (max-width: 800px) {
+  .hero { --home-orbit-center-x: -25px; --home-orbit-center-y: calc(10% + 325px); }
+  .why-feature-row { grid-template-columns: 1fr; }
+  .why-engine-panel { height: 210px; border-left: 0; border-top: 1px solid rgba(255,91,19,.65); }
+  .why-engine { width: min(58%, 260px); }
+  .why-engine-flame { left: 49%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .why-engine-flame, .why-engine-spark { animation: none !important; }
+}
+
+/* V8: Engine thrust lives inside the same SVG coordinate system as its nozzle. */
+.why-engine-panel .why-engine { width: 96%; height: 90%; left: 2%; top: 5%; overflow: visible; }
+.engine-svg-thrust { transform-box: fill-box; transform-origin: left center; animation: engine-svg-burn .7s ease-in-out infinite alternate; }
+@keyframes engine-svg-burn { from { transform: scaleX(.91) scaleY(.88); opacity: .82; } to { transform: scaleX(1.02) scaleY(1.07); opacity: 1; } }
+/* Dedicated services launch illustration: gantry, rocket, exhaust and pad. */
+.page-hero--illustrated > .launch-scene { width: clamp(330px, 37vw, 540px); height: auto; aspect-ratio: 440 / 450; right: clamp(10px, 5vw, 95px); top: 50%; transform: translateY(-50%); filter: drop-shadow(0 0 28px rgba(255,91,19,.12)); }
+.launch-scene svg { width: 100%; height: 100%; overflow: visible; display: block; }
+.launch-scene__rocket { transform-origin: 248px 310px; animation: gantry-rocket-idle 3.4s ease-in-out infinite; }
+.launch-scene__fire { transform-origin: 249px 315px; animation: gantry-fire .35s ease-in-out infinite alternate; }
+.launch-scene__smoke { transform-origin: 255px 370px; animation: gantry-smoke 3s ease-in-out infinite; opacity: .52; }
+.launch-scene__lights { animation: gantry-lights 1.6s steps(2,end) infinite; }
+.launch-scene__status { position: absolute; bottom: 0; right: 7%; color: #ff8b46; font: 600 clamp(9px, .85vw, 12px)/1.4 monospace; letter-spacing: .14em; }
+@keyframes gantry-rocket-idle { 0%,100% {transform:translateY(0)} 50% {transform:translateY(-9px)} }
+@keyframes gantry-fire { from {transform:scaleY(.76);opacity:.8} to {transform:scaleY(1.15);opacity:1} }
+@keyframes gantry-smoke { 0%,100% {transform:translateX(-5px) scale(.94);opacity:.4} 50% {transform:translateX(9px) scale(1.09);opacity:.65} }
+@keyframes gantry-lights { 50% {opacity:.25} }
+@media (max-width:800px) { .page-hero--illustrated > .launch-scene { width:min(76vw,350px); right: 1%; top:auto; bottom:-18px; transform:none; } .why-engine-panel .why-engine {width:98%;left:1%;} }
+@media (prefers-reduced-motion:reduce) { .engine-svg-thrust,.launch-scene__rocket,.launch-scene__fire,.launch-scene__smoke,.launch-scene__lights {animation:none!important;} }

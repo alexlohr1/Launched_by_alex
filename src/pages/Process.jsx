@@ -1,3 +1,4 @@
+import OrbitArtwork from "../components/OrbitArtwork";
 import { Link } from "react-router";
 import Reveal from "../components/Reveal";
 import { useLanguage } from "../LanguageContext";
@@ -14,7 +15,7 @@ function Process() {
         description="See how Launched by Alex takes website projects from discovery and design through development, testing, and launch."
         path="/process"
       />
-      <section className="page-hero process-hero">
+      <section className="page-hero page-hero--illustrated process-hero">
         <p className="section-label">
           {process.label}
         </p>
@@ -30,6 +31,7 @@ function Process() {
         <p>
           {process.description}
         </p>
+        <OrbitArtwork variant="process" />
       </section>
 
       <section className="process-list">

@@ -1,3 +1,4 @@
+import OrbitArtwork from "../components/OrbitArtwork";
 import { Link } from "react-router";
 import Reveal from "../components/Reveal";
 import { useLanguage } from "../LanguageContext";
@@ -14,7 +15,7 @@ function Work() {
         description="Explore websites, brands, and digital experiences designed and developed by Launched by Alex."
         path="/work"
       />
-      <section className="page-hero">
+      <section className="page-hero page-hero--illustrated">
         <p className="section-label">
           {work.label}
         </p>
@@ -30,6 +31,7 @@ function Work() {
         <p>
           {work.description}
         </p>
+        <OrbitArtwork variant="work" />
       </section>
 
       <section className="content-section">
@@ -61,7 +63,7 @@ function Work() {
                   </span>
 
                   <div className="portfolio-mark">
-                    ↗
+                    ↗︎
                   </div>
                 </div>
 

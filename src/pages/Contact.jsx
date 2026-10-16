@@ -1,3 +1,4 @@
+import OrbitArtwork from "../components/OrbitArtwork";
 import Reveal from "../components/Reveal";
 import { useLanguage } from "../LanguageContext";
 import SEO from "../components/SEO";
@@ -46,7 +47,7 @@ function Contact() {
         description="Have a website, branding, or digital project in mind? Contact Launched by Alex to discuss your project and start building."
         path="/contact"
       />
-      <section className="page-hero contact-page-hero">
+      <section className="page-hero page-hero--illustrated contact-page-hero">
         <p className="section-label">
           {contact.label}
         </p>
@@ -62,6 +63,7 @@ function Contact() {
         <p>
           {contact.description}
         </p>
+        <OrbitArtwork variant="contact" />
       </section>
 
       <section className="content-section">
