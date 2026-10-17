@@ -355,7 +355,7 @@ const translations = {
       alexRole: "FOUNDER / DESIGNER / DEVELOPER",
       alexLead: "",
       alexText1:
-        "LAUNCHED by Alex is an independent digital studio built around a simple idea: good design should be beautiful, functional, and purposeful.",
+        "Leading the creative and technical direction of each project, from website design and development to branding, ensuring every digital experience is functional, distinctive, and aligned with the client’s goals.",
       alexText2:
         "Every project is approached as a collaboration, combining creative direction, design, development, and strategy.",
       workWithUs: "Work With Us ↗︎",
@@ -785,7 +785,7 @@ const translations = {
       alexRole: "FUNDADOR / DISEÑADOR / DESARROLLADOR",
       alexLead: "",
       alexText1:
-        "LAUNCHED by Alex es un estudio digital independiente basado en una idea simple: el buen diseño debe ser atractivo, funcional y tener un propósito.",
+        "Encargado de la dirección creativa y técnica de cada proyecto, desde el diseño y desarrollo web hasta la identidad de marca, creando experiencias digitales funcionales, distintivas y alineadas con los objetivos de cada cliente.",
       alexText2:
         "Cada proyecto se desarrolla como una colaboración que combina dirección creativa, diseño, desarrollo y estrategia.",
       workWithUs: "Trabaja con Nosotros ↗︎",
