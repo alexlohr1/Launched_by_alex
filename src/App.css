@@ -3534,3 +3534,66 @@ html[lang="es"] .countdown h2 {
 @keyframes gantry-lights { 50% {opacity:.25} }
 @media (max-width:800px) { .page-hero--illustrated > .launch-scene { width:min(76vw,350px); right: 1%; top:auto; bottom:-18px; transform:none; } .why-engine-panel .why-engine {width:98%;left:1%;} }
 @media (prefers-reduced-motion:reduce) { .engine-svg-thrust,.launch-scene__rocket,.launch-scene__fire,.launch-scene__smoke,.launch-scene__lights {animation:none!important;} }
+
+/* Team portraits */
+.team-member-photo { width: 100%; height: 100%; display: block; object-fit: contain; object-position: center center; }
+
+/* Team: landscape cards with portrait photography on the left */
+.team-members-grid {
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+.team-member-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 38%) minmax(0, 1fr);
+  min-height: 410px;
+}
+.team-member-image {
+  height: 100%;
+  min-height: 410px;
+  background: #141417;
+}
+.team-member-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.team-member-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(28px, 5vw, 64px);
+}
+@media (max-width: 650px) {
+  .team-member-card { grid-template-columns: minmax(0, 1fr); }
+  .team-member-image { height: 420px; min-height: 0; }
+  .team-member-info { padding: 28px; }
+}
+
+/* Team: two horizontal portrait-and-bio cards on desktop; stacked on mobile */
+.team-members-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+.team-member-card {
+  grid-template-columns: minmax(0, 43%) minmax(0, 57%);
+  min-width: 0;
+  min-height: 380px;
+}
+.team-member-image {
+  min-height: 380px;
+}
+.team-member-info {
+  min-width: 0;
+  padding: clamp(16px, 2vw, 34px);
+}
+@media (max-width: 950px) {
+  .team-members-grid { grid-template-columns: minmax(0, 1fr); }
+  .team-member-card { grid-template-columns: minmax(0, 40%) minmax(0, 60%); }
+}
+@media (max-width: 650px) {
+  .team-member-card { grid-template-columns: minmax(0, 1fr); }
+  .team-member-image { height: 420px; min-height: 0; }
+  .team-member-info { padding: 28px; }
+}
